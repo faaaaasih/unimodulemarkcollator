@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TOMSMorphingLabel.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet TOMSMorphingLabel *titlelabel;
 
 
 @end

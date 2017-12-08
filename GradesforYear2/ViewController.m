@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.titlelabel];
+    
+    [self.titlelabel setText:@"Grades in Year 2" withCompletionBlock:^{
+        NSLog(@"Morphing Complete");
+        
+        [self.titlelabel setAnimationDuration:10];
+    }];
+    
+    
+    
 }
 
 

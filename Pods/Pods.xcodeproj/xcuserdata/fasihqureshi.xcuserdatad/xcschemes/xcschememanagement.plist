@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FoldingTabBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GradesforYear2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GradesforYear2Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GradesforYear2UITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3B73143539FB8DFDC1A8FBDCA55B0A8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>583C3C7DDADE2518C277046AF2781975</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5D7A274F0BB024A42DAC9724169219DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCAAE5B1BC4F7C644A4A76EEEFA542F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
