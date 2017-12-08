@@ -22,7 +22,7 @@
     
     [self.titlelabel setText:@"Grades in Year 2" withCompletionBlock:^{
         NSLog(@"Morphing Complete");
-        
+        ///test
         [self.titlelabel setAnimationDuration:10];
     }];
     
