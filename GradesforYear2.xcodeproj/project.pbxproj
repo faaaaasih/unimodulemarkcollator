@@ -10,6 +10,10 @@
 		20BD72AF449BB49CCA69D216 /* libPods-GradesforYear2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF83260726B6F6D4458451A9 /* libPods-GradesforYear2UITests.a */; };
 		8D5034DBE5D7550D8BAB80A4 /* libPods-GradesforYear2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B4EE2CCC20F24807C26B2 /* libPods-GradesforYear2Tests.a */; };
 		9461152AB855171EBB394530 /* libPods-GradesforYear2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCD5821560E119CE4BB8CD2 /* libPods-GradesforYear2.a */; };
+		CA1E62291FDB31DE00609DA7 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62211FDB31DE00609DA7 /* MMDrawerBarButtonItem.m */; };
+		CA1E622A1FDB31DE00609DA7 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62231FDB31DE00609DA7 /* MMDrawerController.m */; };
+		CA1E622B1FDB31DE00609DA7 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62261FDB31DE00609DA7 /* MMDrawerVisualState.m */; };
+		CA1E622C1FDB31DE00609DA7 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62281FDB31DE00609DA7 /* UIViewController+MMDrawerController.m */; };
 		CA55198D1FDAE13F0073CC04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55198C1FDAE13F0073CC04 /* main.m */; };
 		CA5519901FDAE13F0073CC04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55198F1FDAE13F0073CC04 /* AppDelegate.m */; };
 		CA5519931FDAE13F0073CC04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519921FDAE13F0073CC04 /* ViewController.m */; };
@@ -20,10 +24,6 @@
 		CA5519B11FDAE13F0073CC04 /* GradesforYear2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519B01FDAE13F0073CC04 /* GradesforYear2UITests.m */; };
 		CA5519C01FDAE1F00073CC04 /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519BF1FDAE1F00073CC04 /* TOMSMorphingLabel.m */; };
 		CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */; };
-		CAF8BA081FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF8BA001FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.m */; };
-		CAF8BA091FDAFD9A009AEBA3 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF8BA021FDAFD9A009AEBA3 /* MMDrawerController.m */; };
-		CAF8BA0A1FDAFD9A009AEBA3 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF8BA051FDAFD9A009AEBA3 /* MMDrawerVisualState.m */; };
-		CAF8BA0B1FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF8BA071FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,15 @@
 		7528C17429639571F4B19549 /* Pods-GradesforYear2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2UITests/Pods-GradesforYear2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A54B4EE2CCC20F24807C26B2 /* libPods-GradesforYear2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04E0B302786BBF6956CAEEE /* Pods-GradesforYear2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2Tests/Pods-GradesforYear2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1E62201FDB31DE00609DA7 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		CA1E62211FDB31DE00609DA7 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		CA1E62221FDB31DE00609DA7 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		CA1E62231FDB31DE00609DA7 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		CA1E62241FDB31DE00609DA7 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		CA1E62251FDB31DE00609DA7 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		CA1E62261FDB31DE00609DA7 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		CA1E62271FDB31DE00609DA7 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		CA1E62281FDB31DE00609DA7 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		CA5519881FDAE13F0073CC04 /* GradesforYear2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradesforYear2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA55198C1FDAE13F0073CC04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA55198E1FDAE13F0073CC04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,15 +79,6 @@
 		CA5519BF1FDAE1F00073CC04 /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabel.m; sourceTree = "<group>"; };
 		CA5519C11FDAE2230073CC04 /* NSString+Morphing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Morphing.h"; sourceTree = "<group>"; };
 		CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Morphing.m"; sourceTree = "<group>"; };
-		CAF8B9FF1FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerBarButtonItem.h"; sourceTree = "<group>"; };
-		CAF8BA001FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerBarButtonItem.m"; sourceTree = "<group>"; };
-		CAF8BA011FDAFD9A009AEBA3 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerController.h"; sourceTree = "<group>"; };
-		CAF8BA021FDAFD9A009AEBA3 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerController.m"; sourceTree = "<group>"; };
-		CAF8BA031FDAFD9A009AEBA3 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		CAF8BA041FDAFD9A009AEBA3 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerVisualState.h"; sourceTree = "<group>"; };
-		CAF8BA051FDAFD9A009AEBA3 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/MMDrawerVisualState.m"; sourceTree = "<group>"; };
-		CAF8BA061FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		CAF8BA071FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "../../../../Downloads/MMDrawerController-master-2/MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		FEDA9DAF027659A0DFC080AB /* Pods-GradesforYear2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2/Pods-GradesforYear2.release.xcconfig"; sourceTree = "<group>"; };
 		FF83260726B6F6D4458451A9 /* libPods-GradesforYear2UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCD5821560E119CE4BB8CD2 /* libPods-GradesforYear2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,15 +163,15 @@
 		CA55198B1FDAE13F0073CC04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CAF8B9FF1FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.h */,
-				CAF8BA001FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.m */,
-				CAF8BA011FDAFD9A009AEBA3 /* MMDrawerController.h */,
-				CAF8BA021FDAFD9A009AEBA3 /* MMDrawerController.m */,
-				CAF8BA031FDAFD9A009AEBA3 /* MMDrawerController+Subclass.h */,
-				CAF8BA041FDAFD9A009AEBA3 /* MMDrawerVisualState.h */,
-				CAF8BA051FDAFD9A009AEBA3 /* MMDrawerVisualState.m */,
-				CAF8BA061FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.h */,
-				CAF8BA071FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.m */,
+				CA1E62201FDB31DE00609DA7 /* MMDrawerBarButtonItem.h */,
+				CA1E62211FDB31DE00609DA7 /* MMDrawerBarButtonItem.m */,
+				CA1E62221FDB31DE00609DA7 /* MMDrawerController.h */,
+				CA1E62231FDB31DE00609DA7 /* MMDrawerController.m */,
+				CA1E62241FDB31DE00609DA7 /* MMDrawerController+Subclass.h */,
+				CA1E62251FDB31DE00609DA7 /* MMDrawerVisualState.h */,
+				CA1E62261FDB31DE00609DA7 /* MMDrawerVisualState.m */,
+				CA1E62271FDB31DE00609DA7 /* UIViewController+MMDrawerController.h */,
+				CA1E62281FDB31DE00609DA7 /* UIViewController+MMDrawerController.m */,
 				CA5519C11FDAE2230073CC04 /* NSString+Morphing.h */,
 				CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */,
 				CA5519BE1FDAE1F00073CC04 /* TOMSMorphingLabel.h */,
@@ -500,13 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1E622B1FDB31DE00609DA7 /* MMDrawerVisualState.m in Sources */,
 				CA5519931FDAE13F0073CC04 /* ViewController.m in Sources */,
-				CAF8BA081FDAFD9A009AEBA3 /* MMDrawerBarButtonItem.m in Sources */,
-				CAF8BA091FDAFD9A009AEBA3 /* MMDrawerController.m in Sources */,
+				CA1E622A1FDB31DE00609DA7 /* MMDrawerController.m in Sources */,
 				CA5519C01FDAE1F00073CC04 /* TOMSMorphingLabel.m in Sources */,
-				CAF8BA0A1FDAFD9A009AEBA3 /* MMDrawerVisualState.m in Sources */,
 				CA5519901FDAE13F0073CC04 /* AppDelegate.m in Sources */,
-				CAF8BA0B1FDAFD9A009AEBA3 /* UIViewController+MMDrawerController.m in Sources */,
+				CA1E622C1FDB31DE00609DA7 /* UIViewController+MMDrawerController.m in Sources */,
+				CA1E62291FDB31DE00609DA7 /* MMDrawerBarButtonItem.m in Sources */,
 				CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */,
 				CA55198D1FDAE13F0073CC04 /* main.m in Sources */,
 			);
