@@ -7,6 +7,7 @@ target 'GradesforYear2' do
 
   # Pods for GradesforYear2
   pod 'FoldingTabBar'
+pod 'JVFloatLabeledTextField'
 
 
   target 'GradesforYear2Tests' do

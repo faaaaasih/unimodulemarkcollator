@@ -38,7 +38,7 @@
     //prepare rightBarItems
     
     
-    
+    /*
     YALTabBarItem *item3 = [[YALTabBarItem alloc] initWithItemImage:nil
                                                       leftItemImage:nil
                                                      rightItemImage:nil];
@@ -48,6 +48,7 @@
                                                      rightItemImage:nil];
 
     tabBarController.rightBarItems = @[item3, item4];
+     */
     
     tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight; // extra details 
     tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
