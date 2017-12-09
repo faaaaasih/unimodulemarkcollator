@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Datamodel.h"
+#import "ViewmoduledataViewController.h"
+
 
 @interface subjectTableViewController : UITableViewController
 

@@ -23,7 +23,7 @@
     
     //prepare leftBarItems
     YALTabBarItem *item1 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"album-simple-7.png"] // initial image identifier
-                                                      leftItemImage:nil // shen user clicks on initial item
+                                                      leftItemImage:[UIImage imageNamed:@"pencil-7.png"] // shen user clicks on initial item
                                                      rightItemImage:nil];
     
     

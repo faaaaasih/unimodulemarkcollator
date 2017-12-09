@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface choosemoduleViewController : ViewController
+#import "YALFoldingTabBar.h"
+
+@interface choosemoduleViewController : ViewController  <YALTabBarDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleforfirst;
 - (IBAction)buttonactionchoose:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *butout;

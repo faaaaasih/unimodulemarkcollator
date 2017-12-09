@@ -1,24 +1,25 @@
 //
-//  choosemoduleViewController.m
+//  ViewmoduledataViewController.m
 //  GradesforYear2
 //
 //  Created by Fasih Qureshi on 09/12/2017.
 //
 //
 
-#import "choosemoduleViewController.h"
+#import "ViewmoduledataViewController.h"
 
-@interface choosemoduleViewController ()
+@interface ViewmoduledataViewController ()
 
 @end
 
-@implementation choosemoduleViewController
+@implementation ViewmoduledataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.view addSubview:self.butout];
+    self.modulelabel.text = self.mod.Subject;
+    self.Semlabel.text = self.mod.semester;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,12 +37,4 @@
 }
 */
 
-- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBar {
-    
-    [self performSegueWithIdentifier:@"modulelist" sender:self];
-    
-}
-
-- (IBAction)buttonactionchoose:(UIButton *)sender {
-}
 @end

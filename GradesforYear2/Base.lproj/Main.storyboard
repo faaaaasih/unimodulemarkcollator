@@ -56,25 +56,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1C-QU-sdR">
-                                <rect key="frame" x="21" y="226" width="333" height="73"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Choose Module" image="album-simple-7.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonactionchoose:" destination="xLs-W2-83l" eventType="touchUpInside" id="Lgf-eY-auc"/>
-                                    <segue destination="tme-Le-MOj" kind="showDetail" action="showViewController:sender:" id="zk0-dK-uYx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ENc-dk-7Zi" firstAttribute="top" secondItem="A1C-QU-sdR" secondAttribute="bottom" constant="319" id="5vz-bE-1Op"/>
                             <constraint firstItem="ENc-dk-7Zi" firstAttribute="top" secondItem="Yy8-oK-6v3" secondAttribute="bottom" constant="391" id="7hV-hG-9nD"/>
-                            <constraint firstItem="Yy8-oK-6v3" firstAttribute="centerX" secondItem="A1C-QU-sdR" secondAttribute="centerX" id="9Ma-qM-qLb"/>
-                            <constraint firstItem="A1C-QU-sdR" firstAttribute="leading" secondItem="m0S-YV-gPV" secondAttribute="leadingMargin" constant="5" id="CDK-35-0ud"/>
-                            <constraint firstItem="A1C-QU-sdR" firstAttribute="top" secondItem="skL-7T-xGw" secondAttribute="bottom" constant="206" id="Eqz-Pe-aE9"/>
                             <constraint firstItem="Yy8-oK-6v3" firstAttribute="top" secondItem="skL-7T-xGw" secondAttribute="bottom" constant="8" symbolic="YES" id="OlH-WI-r0N"/>
                             <constraint firstItem="Yy8-oK-6v3" firstAttribute="centerX" secondItem="m0S-YV-gPV" secondAttribute="centerX" id="tFp-Q3-1Lc"/>
                             <constraint firstItem="Yy8-oK-6v3" firstAttribute="leading" secondItem="m0S-YV-gPV" secondAttribute="leadingMargin" constant="15" id="xfq-PL-qFc"/>
@@ -82,8 +67,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Zyr-Td-2Jk"/>
                     <connections>
-                        <outlet property="butout" destination="A1C-QU-sdR" id="1rK-SF-dk2"/>
                         <outlet property="titleforfirst" destination="Yy8-oK-6v3" id="YlT-I1-KEA"/>
+                        <segue destination="tme-Le-MOj" kind="show" identifier="modulelist" id="is1-u6-sVN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4T-h6-yKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,6 +107,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TWA-1x-lEU" kind="show" id="r9l-Ga-dP4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -137,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="2828" y="-200.14992503748127"/>
         </scene>
-        <!--View Controller-->
+        <!--Viewmoduledata View Controller-->
         <scene sceneID="x2f-Iu-rvS">
             <objects>
-                <viewController id="TWA-1x-lEU" sceneMemberID="viewController">
+                <viewController id="TWA-1x-lEU" customClass="ViewmoduledataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7cV-Ua-q6V"/>
                         <viewControllerLayoutGuide type="bottom" id="uGV-9O-cur"/>
@@ -149,15 +137,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-FA-ckD">
-                                <rect key="frame" x="0.0" y="43" width="375" height="123"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7G-wY-QWP" customClass="TOMSMorphingLabel">
+                                <rect key="frame" x="0.0" y="226" width="375" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7G-wY-QWP">
-                                <rect key="frame" x="0.0" y="164" width="375" height="123"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6a-FA-ckD" customClass="TOMSMorphingLabel">
+                                <rect key="frame" x="0.0" y="95" width="375" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
@@ -166,6 +154,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Semlabel" destination="G7G-wY-QWP" id="Axw-l5-4po"/>
+                        <outlet property="modulelabel" destination="d6a-FA-ckD" id="Yp5-0p-bsx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHH-OJ-04g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +200,4 @@
             <point key="canvasLocation" x="1888.8" y="-200.14992503748127"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="album-simple-7.png" width="30" height="30"/>
-    </resources>
 </document>

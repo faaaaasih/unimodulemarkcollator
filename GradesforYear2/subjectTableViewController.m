@@ -128,14 +128,34 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    ViewmoduledataViewController *dest = (ViewmoduledataViewController*) segue.destinationViewController;
+    
+    NSIndexPath *indexpath = [self.tableView indexPathForSelectedRow];
+    
+    if (indexpath.section == 0){
+        
+        module *temp = [self.data.firstsemestermodule objectAtIndex:indexpath.row];
+        dest.mod = temp;
+        
+    }
+    
+    else if (indexpath.section == 1){
+        
+        module *tempo = [self.data.secondsemestermodule objectAtIndex:indexpath.row];
+        dest.mod = tempo;
+    }
+
+
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

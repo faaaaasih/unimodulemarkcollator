@@ -27,9 +27,11 @@
 		CA5519B11FDAE13F0073CC04 /* GradesforYear2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519B01FDAE13F0073CC04 /* GradesforYear2UITests.m */; };
 		CA5519C01FDAE1F00073CC04 /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519BF1FDAE1F00073CC04 /* TOMSMorphingLabel.m */; };
 		CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */; };
+		CA674CF31FDC780200512886 /* ViewmoduledataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA674CF21FDC780200512886 /* ViewmoduledataViewController.m */; };
 		CAA5962E1FDC15D600C3C57E /* subjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA5962D1FDC15D600C3C57E /* subjectTableViewController.m */; };
 		CAA596311FDC163E00C3C57E /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA596301FDC163E00C3C57E /* module.m */; };
 		CAA596341FDC16BA00C3C57E /* Datamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA596331FDC16BA00C3C57E /* Datamodel.m */; };
+		CAA596361FDC298600C3C57E /* pencil-7.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA596351FDC298600C3C57E /* pencil-7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,12 +91,15 @@
 		CA5519BF1FDAE1F00073CC04 /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabel.m; sourceTree = "<group>"; };
 		CA5519C11FDAE2230073CC04 /* NSString+Morphing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Morphing.h"; sourceTree = "<group>"; };
 		CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Morphing.m"; sourceTree = "<group>"; };
+		CA674CF11FDC780200512886 /* ViewmoduledataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewmoduledataViewController.h; sourceTree = "<group>"; };
+		CA674CF21FDC780200512886 /* ViewmoduledataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewmoduledataViewController.m; sourceTree = "<group>"; };
 		CAA5962C1FDC15D600C3C57E /* subjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subjectTableViewController.h; sourceTree = "<group>"; };
 		CAA5962D1FDC15D600C3C57E /* subjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subjectTableViewController.m; sourceTree = "<group>"; };
 		CAA5962F1FDC163E00C3C57E /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
 		CAA596301FDC163E00C3C57E /* module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = module.m; sourceTree = "<group>"; };
 		CAA596321FDC16BA00C3C57E /* Datamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datamodel.h; sourceTree = "<group>"; };
 		CAA596331FDC16BA00C3C57E /* Datamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datamodel.m; sourceTree = "<group>"; };
+		CAA596351FDC298600C3C57E /* pencil-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil-7.png"; sourceTree = "<group>"; };
 		FEDA9DAF027659A0DFC080AB /* Pods-GradesforYear2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2/Pods-GradesforYear2.release.xcconfig"; sourceTree = "<group>"; };
 		FF83260726B6F6D4458451A9 /* libPods-GradesforYear2UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCD5821560E119CE4BB8CD2 /* libPods-GradesforYear2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +146,7 @@
 		CA1E622D1FDB367500609DA7 /* icons for tab bar */ = {
 			isa = PBXGroup;
 			children = (
+				CAA596351FDC298600C3C57E /* pencil-7.png */,
 				CA25825B1FDB794F00555F05 /* album-simple-7.png */,
 				CA25825D1FDB795800555F05 /* book-cover-star-7.png */,
 			);
@@ -178,6 +184,8 @@
 				CA5519911FDAE13F0073CC04 /* ViewController.h */,
 				CA5519921FDAE13F0073CC04 /* ViewController.m */,
 				CA5519941FDAE13F0073CC04 /* Main.storyboard */,
+				CA674CF11FDC780200512886 /* ViewmoduledataViewController.h */,
+				CA674CF21FDC780200512886 /* ViewmoduledataViewController.m */,
 				CAA5962F1FDC163E00C3C57E /* module.h */,
 				CAA596301FDC163E00C3C57E /* module.m */,
 				CAA596321FDC16BA00C3C57E /* Datamodel.h */,
@@ -364,6 +372,7 @@
 				CA25825E1FDB795800555F05 /* book-cover-star-7.png in Resources */,
 				CA25825C1FDB794F00555F05 /* album-simple-7.png in Resources */,
 				CA5519981FDAE13F0073CC04 /* Assets.xcassets in Resources */,
+				CAA596361FDC298600C3C57E /* pencil-7.png in Resources */,
 				CA5519961FDAE13F0073CC04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +554,7 @@
 				CAA596341FDC16BA00C3C57E /* Datamodel.m in Sources */,
 				CA5519C01FDAE1F00073CC04 /* TOMSMorphingLabel.m in Sources */,
 				CA5519901FDAE13F0073CC04 /* AppDelegate.m in Sources */,
+				CA674CF31FDC780200512886 /* ViewmoduledataViewController.m in Sources */,
 				CA1E622C1FDB31DE00609DA7 /* UIViewController+MMDrawerController.m in Sources */,
 				CA1E62291FDB31DE00609DA7 /* MMDrawerBarButtonItem.m in Sources */,
 				CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */,
