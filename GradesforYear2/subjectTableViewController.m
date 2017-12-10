@@ -75,6 +75,8 @@
         cell.detailTextLabel.text = temp.semester;
     }
     
+    
+    
     return cell;
 }
 
@@ -90,6 +92,8 @@
         
         title = @"Semester Two Modules";
     }
+    
+
     return title;
 }
 

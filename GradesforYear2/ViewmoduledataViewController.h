@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "TOMSMorphingLabel.h"
 #import "module.h"
+#import "JVFloatLabeledTextField.h"
+#import "JVFloatLabeledTextView.h"
 
 @interface ViewmoduledataViewController : UIViewController
 @property (weak, nonatomic) IBOutlet TOMSMorphingLabel *modulelabel;

@@ -28,8 +28,10 @@
     
     
     YALTabBarItem *item2 = [[YALTabBarItem alloc] initWithItemImage: [UIImage imageNamed:@"book-cover-star-7.png"]
-                                                      leftItemImage: nil
+                                                      leftItemImage: [UIImage imageNamed:@"pencil-7.png"] // shen user clicks on initial item
                                                      rightItemImage:nil];
+
+                                                  
     
     tabBarController.leftBarItems = @[item1, item2];
     
