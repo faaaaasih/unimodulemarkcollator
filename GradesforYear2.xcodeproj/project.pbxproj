@@ -10,6 +10,7 @@
 		20BD72AF449BB49CCA69D216 /* libPods-GradesforYear2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF83260726B6F6D4458451A9 /* libPods-GradesforYear2UITests.a */; };
 		8D5034DBE5D7550D8BAB80A4 /* libPods-GradesforYear2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B4EE2CCC20F24807C26B2 /* libPods-GradesforYear2Tests.a */; };
 		9461152AB855171EBB394530 /* libPods-GradesforYear2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCD5821560E119CE4BB8CD2 /* libPods-GradesforYear2.a */; };
+		CA1AFD391FDDB42100A929B2 /* singletonclass.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1AFD381FDDB42100A929B2 /* singletonclass.m */; };
 		CA1E62291FDB31DE00609DA7 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62211FDB31DE00609DA7 /* MMDrawerBarButtonItem.m */; };
 		CA1E622A1FDB31DE00609DA7 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62231FDB31DE00609DA7 /* MMDrawerController.m */; };
 		CA1E622B1FDB31DE00609DA7 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1E62261FDB31DE00609DA7 /* MMDrawerVisualState.m */; };
@@ -58,6 +59,8 @@
 		7528C17429639571F4B19549 /* Pods-GradesforYear2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2UITests/Pods-GradesforYear2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A54B4EE2CCC20F24807C26B2 /* libPods-GradesforYear2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04E0B302786BBF6956CAEEE /* Pods-GradesforYear2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2Tests/Pods-GradesforYear2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1AFD371FDDB42100A929B2 /* singletonclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singletonclass.h; sourceTree = "<group>"; };
+		CA1AFD381FDDB42100A929B2 /* singletonclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singletonclass.m; sourceTree = "<group>"; };
 		CA1E62201FDB31DE00609DA7 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		CA1E62211FDB31DE00609DA7 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		CA1E62221FDB31DE00609DA7 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				CA5519911FDAE13F0073CC04 /* ViewController.h */,
 				CA5519921FDAE13F0073CC04 /* ViewController.m */,
 				CA5519941FDAE13F0073CC04 /* Main.storyboard */,
+				CA1AFD371FDDB42100A929B2 /* singletonclass.h */,
+				CA1AFD381FDDB42100A929B2 /* singletonclass.m */,
 				CA674CF11FDC780200512886 /* ViewmoduledataViewController.h */,
 				CA674CF21FDC780200512886 /* ViewmoduledataViewController.m */,
 				CAA5962F1FDC163E00C3C57E /* module.h */,
@@ -559,6 +564,7 @@
 				CA1E62291FDB31DE00609DA7 /* MMDrawerBarButtonItem.m in Sources */,
 				CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */,
 				CA55198D1FDAE13F0073CC04 /* main.m in Sources */,
+				CA1AFD391FDDB42100A929B2 /* singletonclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
