@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+singletonclass *ref = [singletonclass  sharedinstance];
+    
+    [ref setSem:self.mod.semester];
+    
     // Do any additional setup after loading the view.
     
     self.modulelabel.text = self.mod.Subject;

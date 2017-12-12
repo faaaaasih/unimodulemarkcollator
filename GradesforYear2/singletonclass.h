@@ -11,8 +11,9 @@
 @interface singletonclass : NSObject
 
 
-@property (nonatomic, strong) NSString *typeofmodule;
+@property (nonatomic, strong) NSString *typeoftest;
 @property int percenta;
+@property (nonatomic, strong) NSString *sem;
 
 +(singletonclass*) sharedinstance;
 @end

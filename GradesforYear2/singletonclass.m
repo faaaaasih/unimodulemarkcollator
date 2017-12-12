@@ -10,7 +10,7 @@
 
 @implementation singletonclass
 
-@synthesize  typeofmodule, percenta;
+@synthesize  typeoftest, percenta, sem;
 
 static singletonclass *_sharedinstance;
 
