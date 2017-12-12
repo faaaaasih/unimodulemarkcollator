@@ -12,7 +12,7 @@
 
 @end
 
-@implementation ViewmoduledataViewController
+@implementation ViewmoduledataViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,16 @@ singletonclass *ref = [singletonclass  sharedinstance];
     
     self.modulelabel.text = self.mod.Subject;
     self.Semlabel.text = self.mod.semester;
+    self.modulelabel.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
+    self.modulelabel.numberOfLines = 0;
+    
+    [ self.markper shine];
+    [self.perofmod shine];
+    
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

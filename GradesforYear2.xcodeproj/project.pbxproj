@@ -29,6 +29,7 @@
 		CA5519C01FDAE1F00073CC04 /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519BF1FDAE1F00073CC04 /* TOMSMorphingLabel.m */; };
 		CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */; };
 		CA674CF31FDC780200512886 /* ViewmoduledataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA674CF21FDC780200512886 /* ViewmoduledataViewController.m */; };
+		CA8BE20F1FE082DD0070694A /* RQShineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE20E1FE082DD0070694A /* RQShineLabel.m */; };
 		CAA5962E1FDC15D600C3C57E /* subjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA5962D1FDC15D600C3C57E /* subjectTableViewController.m */; };
 		CAA596311FDC163E00C3C57E /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA596301FDC163E00C3C57E /* module.m */; };
 		CAA596341FDC16BA00C3C57E /* Datamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA596331FDC16BA00C3C57E /* Datamodel.m */; };
@@ -96,6 +97,8 @@
 		CA5519C21FDAE2230073CC04 /* NSString+Morphing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Morphing.m"; sourceTree = "<group>"; };
 		CA674CF11FDC780200512886 /* ViewmoduledataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewmoduledataViewController.h; sourceTree = "<group>"; };
 		CA674CF21FDC780200512886 /* ViewmoduledataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewmoduledataViewController.m; sourceTree = "<group>"; };
+		CA8BE20D1FE082DD0070694A /* RQShineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RQShineLabel.h; sourceTree = "<group>"; };
+		CA8BE20E1FE082DD0070694A /* RQShineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RQShineLabel.m; sourceTree = "<group>"; };
 		CAA5962C1FDC15D600C3C57E /* subjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subjectTableViewController.h; sourceTree = "<group>"; };
 		CAA5962D1FDC15D600C3C57E /* subjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subjectTableViewController.m; sourceTree = "<group>"; };
 		CAA5962F1FDC163E00C3C57E /* module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = module.h; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 		CA55198B1FDAE13F0073CC04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA8BE20D1FE082DD0070694A /* RQShineLabel.h */,
+				CA8BE20E1FE082DD0070694A /* RQShineLabel.m */,
 				CA1E62201FDB31DE00609DA7 /* MMDrawerBarButtonItem.h */,
 				CA1E62211FDB31DE00609DA7 /* MMDrawerBarButtonItem.m */,
 				CA1E62221FDB31DE00609DA7 /* MMDrawerController.h */,
@@ -553,6 +558,7 @@
 				CA1E622B1FDB31DE00609DA7 /* MMDrawerVisualState.m in Sources */,
 				CA5519931FDAE13F0073CC04 /* ViewController.m in Sources */,
 				CAA5962E1FDC15D600C3C57E /* subjectTableViewController.m in Sources */,
+				CA8BE20F1FE082DD0070694A /* RQShineLabel.m in Sources */,
 				CA1E622A1FDB31DE00609DA7 /* MMDrawerController.m in Sources */,
 				CA2582641FDC130F00555F05 /* choosemoduleViewController.m in Sources */,
 				CAA596311FDC163E00C3C57E /* module.m in Sources */,
