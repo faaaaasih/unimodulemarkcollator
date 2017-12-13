@@ -13,7 +13,8 @@
 #import "RQShineLabel.h"
 
 @interface ViewmoduledataViewController : UIViewController
-<UITextFieldDelegate>
+<UITextFieldDelegate, UIGestureRecognizerDelegate>
+
 
 
 @property (weak, nonatomic) IBOutlet TOMSMorphingLabel *modulelabel;
@@ -22,5 +23,16 @@
 
 @property (weak, nonatomic) IBOutlet RQShineLabel *markper;
 @property (weak, nonatomic) IBOutlet RQShineLabel *perofmod;
+@property (weak, nonatomic) IBOutlet UITextField *markpertex;
+@property (weak, nonatomic) IBOutlet UITextField *perofmodtex;
+@property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *panview;
+
+@property (nonatomic, strong) singletonclass *ref;
+
+@property int mark;
+@property int per;
+
+- (IBAction)panvieaction:(UIPanGestureRecognizer *)sender;
+
 
 @end

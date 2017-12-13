@@ -179,15 +179,16 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dEd-N6-FvU">
                                 <rect key="frame" x="178" y="474" width="181" height="30"/>
+                                <gestureRecognizers/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="continue"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8O-cL-Kh5">
                                 <rect key="frame" x="178" y="542" width="181" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="continue"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark(%)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPI-wh-ejh" customClass="RQShineLabel">
                                 <rect key="frame" x="6" y="468" width="147" height="36"/>
@@ -206,6 +207,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="mPr-z7-GOo" firstAttribute="top" secondItem="qBS-Jz-CCl" secondAttribute="bottom" constant="16" id="9KW-Av-cBG"/>
                             <constraint firstItem="dEd-N6-FvU" firstAttribute="trailing" secondItem="Z8O-cL-Kh5" secondAttribute="trailing" id="G7h-fP-dPX"/>
@@ -228,17 +230,46 @@
                             <constraint firstItem="Aug-oU-kel" firstAttribute="top" secondItem="EPI-wh-ejh" secondAttribute="bottom" constant="38" id="n59-GC-8yy"/>
                             <constraint firstItem="qBS-Jz-CCl" firstAttribute="leading" secondItem="mPr-z7-GOo" secondAttribute="leading" id="oKr-vp-4lR"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0Av-Mx-hE2" appends="YES" id="eUE-Hm-rJo"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="Semlabel" destination="mPr-z7-GOo" id="cTG-0L-v17"/>
                         <outlet property="markper" destination="EPI-wh-ejh" id="lmj-Z4-acD"/>
+                        <outlet property="markpertex" destination="dEd-N6-FvU" id="w2D-Lm-2VL"/>
                         <outlet property="modulelabel" destination="qBS-Jz-CCl" id="2Mx-NM-N3A"/>
+                        <outlet property="panview" destination="0Av-Mx-hE2" id="ofl-KA-Cka"/>
                         <outlet property="perofmod" destination="Aug-oU-kel" id="EJV-69-lHN"/>
+                        <outlet property="perofmodtex" destination="Z8O-cL-Kh5" id="3I5-Ft-R8v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHH-OJ-04g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0Av-Mx-hE2">
+                    <connections>
+                        <action selector="panvieaction:" destination="TWA-1x-lEU" id="z5m-0c-MpN"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3549.5999999999999" y="-201.04947526236884"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5uu-fB-FJT">
+            <objects>
+                <viewController id="pbw-Ui-r5p" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pmf-07-pBn"/>
+                        <viewControllerLayoutGuide type="bottom" id="lXf-7c-4GI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vnW-HE-rfC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4d-ii-L4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4540" y="414"/>
         </scene>
         <!--Folding Tab Bar Controller-->
         <scene sceneID="G2A-Ch-mvt">

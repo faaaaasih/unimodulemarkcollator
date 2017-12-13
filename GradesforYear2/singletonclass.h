@@ -12,7 +12,8 @@
 
 
 @property (nonatomic, strong) NSString *typeoftest;
-@property int percenta;
+@property int mark;
+@property int percentofmode;
 @property (nonatomic, strong) NSString *sem;
 
 +(singletonclass*) sharedinstance;

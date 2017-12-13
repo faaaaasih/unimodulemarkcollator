@@ -12,14 +12,20 @@
 
 @end
 
-@implementation ViewmoduledataViewController 
+@implementation ViewmoduledataViewController
+
+@synthesize mark,per, ref;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-singletonclass *ref = [singletonclass  sharedinstance];
+    self.markpertex.delegate= self;
+    self.perofmodtex.delegate = self;
+    self.panview.delegate = self;
+
+    self.ref = [singletonclass  sharedinstance];
     
-    [ref setSem:self.mod.semester];
+    [self.ref setSem:self.mod.semester];
     
     // Do any additional setup after loading the view.
     
@@ -30,15 +36,25 @@ singletonclass *ref = [singletonclass  sharedinstance];
     
     [ self.markper shine];
     [self.perofmod shine];
+   
+
+    //[self.markpertexges locationOfTouch:2 inView:nil];
     
     
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [self.markpertex resignFirstResponder];
+    [self.perofmodtex resignFirstResponder];
+    
+    return YES;
 }
 
 /*
@@ -50,5 +66,34 @@ singletonclass *ref = [singletonclass  sharedinstance];
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)panvieaction:(UIPanGestureRecognizer *)sender {
+    
+    if ([self.markpertex isFirstResponder]){
+        
+        [self.markpertex resignFirstResponder];
+        
+        self.mark = [self.markpertex.text intValue ];
+        
+        [self.ref setMark:self.mark];
+        
+        
+        NSLog(@"%i", self.mark);
+     
+    }
+    
+    if ([self.perofmodtex isFirstResponder]){
+        
+        [self.perofmodtex resignFirstResponder];
+        self.per = [self.perofmodtex.text intValue];
+        [self.ref setPercentofmode:self.per];
+        NSLog(@"%i", self.per);
+        
+
+    }
+
+}
+
+
 
 @end
