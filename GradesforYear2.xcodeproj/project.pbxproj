@@ -34,6 +34,8 @@
 		CAA596311FDC163E00C3C57E /* module.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA596301FDC163E00C3C57E /* module.m */; };
 		CAA596341FDC16BA00C3C57E /* Datamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA596331FDC16BA00C3C57E /* Datamodel.m */; };
 		CAA596361FDC298600C3C57E /* pencil-7.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA596351FDC298600C3C57E /* pencil-7.png */; };
+		CAC4F4CA1FE1C32600E59166 /* resultviewc.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4F4C91FE1C32600E59166 /* resultviewc.m */; };
+		CAC992B61FE30A56004E8244 /* tableclassforresult.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC992B51FE30A56004E8244 /* tableclassforresult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,10 @@
 		CAA596321FDC16BA00C3C57E /* Datamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datamodel.h; sourceTree = "<group>"; };
 		CAA596331FDC16BA00C3C57E /* Datamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datamodel.m; sourceTree = "<group>"; };
 		CAA596351FDC298600C3C57E /* pencil-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil-7.png"; sourceTree = "<group>"; };
+		CAC4F4C81FE1C32600E59166 /* resultviewc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultviewc.h; sourceTree = "<group>"; };
+		CAC4F4C91FE1C32600E59166 /* resultviewc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultviewc.m; sourceTree = "<group>"; };
+		CAC992B41FE30A56004E8244 /* tableclassforresult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableclassforresult.h; sourceTree = "<group>"; };
+		CAC992B51FE30A56004E8244 /* tableclassforresult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableclassforresult.m; sourceTree = "<group>"; };
 		FEDA9DAF027659A0DFC080AB /* Pods-GradesforYear2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradesforYear2.release.xcconfig"; path = "Pods/Target Support Files/Pods-GradesforYear2/Pods-GradesforYear2.release.xcconfig"; sourceTree = "<group>"; };
 		FF83260726B6F6D4458451A9 /* libPods-GradesforYear2UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCD5821560E119CE4BB8CD2 /* libPods-GradesforYear2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradesforYear2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +196,10 @@
 				CA5519911FDAE13F0073CC04 /* ViewController.h */,
 				CA5519921FDAE13F0073CC04 /* ViewController.m */,
 				CA5519941FDAE13F0073CC04 /* Main.storyboard */,
+				CAC992B41FE30A56004E8244 /* tableclassforresult.h */,
+				CAC992B51FE30A56004E8244 /* tableclassforresult.m */,
+				CAC4F4C81FE1C32600E59166 /* resultviewc.h */,
+				CAC4F4C91FE1C32600E59166 /* resultviewc.m */,
 				CA1AFD371FDDB42100A929B2 /* singletonclass.h */,
 				CA1AFD381FDDB42100A929B2 /* singletonclass.m */,
 				CA674CF11FDC780200512886 /* ViewmoduledataViewController.h */,
@@ -561,6 +571,7 @@
 				CA8BE20F1FE082DD0070694A /* RQShineLabel.m in Sources */,
 				CA1E622A1FDB31DE00609DA7 /* MMDrawerController.m in Sources */,
 				CA2582641FDC130F00555F05 /* choosemoduleViewController.m in Sources */,
+				CAC992B61FE30A56004E8244 /* tableclassforresult.m in Sources */,
 				CAA596311FDC163E00C3C57E /* module.m in Sources */,
 				CAA596341FDC16BA00C3C57E /* Datamodel.m in Sources */,
 				CA5519C01FDAE1F00073CC04 /* TOMSMorphingLabel.m in Sources */,
@@ -568,6 +579,7 @@
 				CA674CF31FDC780200512886 /* ViewmoduledataViewController.m in Sources */,
 				CA1E622C1FDB31DE00609DA7 /* UIViewController+MMDrawerController.m in Sources */,
 				CA1E62291FDB31DE00609DA7 /* MMDrawerBarButtonItem.m in Sources */,
+				CAC4F4CA1FE1C32600E59166 /* resultviewc.m in Sources */,
 				CA5519C31FDAE2230073CC04 /* NSString+Morphing.m in Sources */,
 				CA55198D1FDAE13F0073CC04 /* main.m in Sources */,
 				CA1AFD391FDDB42100A929B2 /* singletonclass.m in Sources */,

@@ -51,9 +51,29 @@
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     
-    [self.markpertex resignFirstResponder];
-    [self.perofmodtex resignFirstResponder];
+    if ([self.markpertex isFirstResponder]){
+        
+        [self.markpertex resignFirstResponder];
+        
+        self.mark = [self.markpertex.text intValue ];
+        
+        [self.ref setMark:self.mark];
+        
+        
+        NSLog(@"%i", self.mark);
+        
+    }
     
+    if ([self.perofmodtex isFirstResponder]){
+        
+        [self.perofmodtex resignFirstResponder];
+        self.per = [self.perofmodtex.text intValue];
+        [self.ref setPercentofmode:self.per];
+        
+        [self performSegueWithIdentifier:@"gotoresult" sender:self];
+        NSLog(@"%i", self.per);
+        
+    }
     return YES;
 }
 
@@ -76,8 +96,6 @@
         self.mark = [self.markpertex.text intValue ];
         
         [self.ref setMark:self.mark];
-        
-        
         NSLog(@"%i", self.mark);
      
     }

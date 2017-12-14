@@ -15,6 +15,9 @@
 @property int mark;
 @property int percentofmode;
 @property (nonatomic, strong) NSString *sem;
+@property int index;
+@property (nonatomic, strong) NSMutableArray *arraym;
+@property (nonatomic, strong) NSMutableArray *arrayper;
 
 +(singletonclass*) sharedinstance;
 @end
