@@ -10,7 +10,7 @@
 
 @implementation singletonclass
 
-@synthesize  typeoftest, mark, percentofmode, sem, index, arraym,arrayper;
+@synthesize   mark, percentofmode, sem, index, arraym,arrayper,typeoftestarr ,typeoftest;
 
 static singletonclass *_sharedinstance;
 
@@ -21,6 +21,7 @@ static singletonclass *_sharedinstance;
         
         self.arraym = [NSMutableArray array];
         self.arrayper = [NSMutableArray array];
+        self.typeoftestarr = [NSMutableArray array];
         
     }
     return self;

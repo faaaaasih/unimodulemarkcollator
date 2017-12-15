@@ -14,28 +14,34 @@
 
 @implementation ViewmoduledataViewController
 
-@synthesize mark,per, ref;
+@synthesize mark,per, ref, typeoftestmod;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.markpertex.delegate= self;
     self.perofmodtex.delegate = self;
+    self.typeoftesttex.delegate = self;
     self.panview.delegate = self;
 
     self.ref = [singletonclass  sharedinstance];
     
     [self.ref setSem:self.mod.semester];
+   
+    //[self.ref setTypeoftest:self.typeoftesttex.text];
     
     // Do any additional setup after loading the view.
     
     self.modulelabel.text = self.mod.Subject;
     self.Semlabel.text = self.mod.semester;
+    self.typeoftestlabel.text = @"Please enter test";
     self.modulelabel.lineBreakMode = NSLineBreakByWordWrapping; // These two lines of code have been implemented so that there is a word wrap with the UILabel. Since its a long descripion, it looks better when the text is word wrapped as opposed to one long line.
     self.modulelabel.numberOfLines = 0;
     
     [ self.markper shine];
     [self.perofmod shine];
+    [self.typeoftestlabel shine];
+    
    
 
     //[self.markpertexges locationOfTouch:2 inView:nil];
@@ -74,6 +80,15 @@
         NSLog(@"%i", self.per);
         
     }
+    
+    if ([self.typeoftesttex isFirstResponder]){
+        
+        [self.typeoftesttex resignFirstResponder];
+        self.typeoftestmod = self.typeoftesttex.text ;
+        [self.ref setTypeoftest:self.typeoftestmod];
+
+        
+    }
     return YES;
 }
 
@@ -109,6 +124,16 @@
         
 
     }
+    
+    if ([self.typeoftesttex isFirstResponder]){
+        
+        [self.typeoftesttex resignFirstResponder];
+        self.typeoftestmod = self.typeoftesttex.text ;
+        [self.ref setTypeoftest:self.typeoftestmod];
+        
+        
+    }
+
 
 }
 

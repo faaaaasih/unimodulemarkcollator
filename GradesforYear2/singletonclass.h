@@ -11,6 +11,7 @@
 @interface singletonclass : NSObject
 
 
+@property (nonatomic, strong) NSMutableArray *typeoftestarr;
 @property (nonatomic, strong) NSString *typeoftest;
 @property int mark;
 @property int percentofmode;

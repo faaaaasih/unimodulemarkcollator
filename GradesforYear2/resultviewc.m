@@ -14,25 +14,32 @@
 
 @implementation resultviewc
 
+@synthesize passedonref, newarrayofmark,arrayofpercen, arrayoftest, markm, perce,typetestpas ,tablecellforresult;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     self.passedonref = [singletonclass sharedinstance];
     self.markm = [self.passedonref mark ];
     self.perce = [self.passedonref percentofmode];
+    self.typetestpas = [self.passedonref typeoftest];
 
    
     [[self.passedonref arraym] addObject: [NSNumber numberWithInt:self.markm]];
     [[self.passedonref arrayper] addObject:[NSNumber numberWithInt:self.perce]];
-    
+    [[self.passedonref typeoftestarr] addObject:self.typetestpas];
     
     //[self.passedonref setArraym: self.arrayofmark];
 
     self.newarrayofmark = [self.passedonref arraym];
     self.arrayofpercen = [self.passedonref arrayper];
+    self.arrayoftest = [self.passedonref typeoftestarr];
     
     NSLog(@"Array : %@", [self.passedonref arraym]);
     NSLog(@"Array per : %@", [self.passedonref arrayper]);
+     NSLog(@"Array per : %@", [self.passedonref typeoftestarr]);
 
     
   //  if (self.arrayofmark.count  == self.arrayofmark.count){
@@ -49,6 +56,45 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    NSMutableArray *arr = [self.passedonref typeoftestarr];
+    
+    return  arr.count;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    
+    return 1;
+}
+
+    
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    
+    
+    NSMutableArray *arr = [self.passedonref typeoftestarr];
+    
+    return [arr objectAtIndex:section];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"result" forIndexPath:indexPath];
+    
+
+        cell.textLabel.text = [NSString stringWithFormat:@"Mark: %@ Percent" , [[self.passedonref arraym] objectAtIndex:indexPath.section]];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Percentage of Module: %@ Percent" , [[self.passedonref arrayper] objectAtIndex:indexPath.section]];
+    
+    
+    return cell;
+}
+
 
 /*
 #pragma mark - Navigation
